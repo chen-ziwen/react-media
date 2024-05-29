@@ -1,0 +1,12 @@
+.nav-bar {
+    width: 100%;
+    height: 5.625rem;
+
+    .active {
+        color: red;
+    }
+
+    .pending {
+        color: blue;
+    }
+}
