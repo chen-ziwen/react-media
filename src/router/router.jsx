@@ -9,19 +9,29 @@ const router = createBrowserRouter([
     children: [
       {
         path: "discover",
-        element: <div>Discover</div>,
+        element: <div>首页</div>,
+        children: [
+          {
+            path: "front",
+            element: <div>前端</div>,
+          },
+          {
+            path: "backend",
+            element: <div>后端</div>,
+          },
+        ],
       },
       {
         path: "introduce",
-        element: <div>Introduce</div>,
+        element: <div>自我介绍</div>,
       },
       {
         path: "messages",
-        element: <div>Messages</div>,
+        element: <div>详细信息</div>,
       },
       {
         path: "address",
-        element: <div>Address</div>,
+        element: <div>项目地址</div>,
       },
     ],
   },

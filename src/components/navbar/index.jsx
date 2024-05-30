@@ -1,10 +1,7 @@
-import { useState } from "react";
 import "./navbar.scss";
 import { NavLink } from "react-router-dom";
 
-export default function NavBar({ title = "标题" }) {
-  const [searchbox, setsearchbox] = useState(false);
-
+export default function NavBar() {
   const navLinks = [
     { name: "首页", to: "discover" },
     { name: "自我介绍", to: "introduce" },
@@ -14,10 +11,10 @@ export default function NavBar({ title = "标题" }) {
 
   return (
     <nav className="nav-bar">
-      {title}
-      <ul>
+      <i></i>
+      <ul className="nav-bar-box">
         {navLinks.map((item, index) => (
-          <li key={index}>
+          <li className="nav-bar-li" key={index}>
             <NavLink
               to={item.to}
               className={({ isActive, isPending }) =>

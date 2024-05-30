@@ -1,14 +1,13 @@
-import './App.css';
+import './App.scss';
 import NavBar from "./components/navbar";
 import FooterBar from './components/footerbar';
 import { Outlet } from 'react-router-dom';
 
 function App() {
-
   return (
     <div className="App">
-      <NavBar title="永恒的爱情"></NavBar>
-      <main>
+      <NavBar></NavBar>
+      <main className='main'>
         <Outlet />
       </main>
       <FooterBar></FooterBar>
