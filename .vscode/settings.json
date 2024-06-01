@@ -1,0 +1,18 @@
+{
+  "workbench.colorTheme": "One Dark Pro Mix",
+  "editor.fontSize": 21,
+  "editor.tabSize": 2,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "reactSnippets.settings.prettierEnabled": true,
+  "prettier.documentSelectors": [".tsx", ".jsx", ".js", ".ts"],
+  "cssrem.vwDesign": 1920,
+  "cssrem.wxssDeviceWidth": 1920,
+  "cssrem.wxssScreenWidth": 1920,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": ""
+}

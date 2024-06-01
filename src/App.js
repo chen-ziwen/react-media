@@ -1,13 +1,15 @@
-import './App.scss';
-import NavBar from "./components/navbar";
-import FooterBar from './components/footerbar';
-import { Outlet } from 'react-router-dom';
+import "./App.scss";
+
+// import "./util/auto-rem"; // 自动计算rem
+import HeaderBar from "./components/haaderbar";
+import FooterBar from "./components/footerbar";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar></NavBar>
-      <main className='main'>
+    <div className="App" data-theme="light">
+      <HeaderBar></HeaderBar>
+      <main className="main">
         <Outlet />
       </main>
       <FooterBar></FooterBar>
